@@ -1,0 +1,262 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.Absolute-Center {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#mainContent {
+    min-height: 100vh;
+    background: #5c6c8d;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+#welcomeWrapper {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 10px 15px rgba(255, 255, 255, 0.466);
+    height: 400px;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+#welcomeTitle {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    color: rgb(171, 171, 171);
+}
+
+#welcomeWrapper p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #000000ad;
+    padding: 0px 10px;
+}
+
+#welcomeWrapper button {
+    width: 40%;
+    height: 20%;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    background-color: rgb(186, 210, 110);
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 2em;
+    float: right;
+}
+
+#welcomeWrapper button:focus,
+#welcomeWrapper button:hover {
+    border: 0;
+    outline: none;
+    background-color: rgb(144, 161, 89);
+}
+
+#sizeFieldContainer {
+    float: left;
+    height: 20%;
+    width: calc(60% - 20px);
+    padding: 10px;
+}
+
+#sizeFieldContainer p {
+    float: left;
+    width: calc(50% - 20px);
+}
+
+#sizeFieldContainer input {
+    float: right;
+    height: 100%;
+    border-radius: 20px;
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    width: calc(50% - 20px);
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gridElem {
+    vertical-align: center;
+    min-width: calc(100vw);
+    min-height: calc(100vh);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-animation: fadein 1s;
+    animation: fadein 1s;
+}
+
+.gridElem p {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    max-height: 100%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#configuration {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 15px 20px;
+    font-size: medium;
+    color: rgb(171, 171, 171);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#settings {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 10px 15px rgba(255, 255, 255, 0.466);
+    height: 60%;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    -webkit-animation: fadein 2s;
+    animation: fadein 2s;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+#colorSelectors {}
+
+#settingsButtonsWrappers {
+    bottom: 0px;
+    height: 15%;
+}
+
+#settings button {
+    width: 50%;
+    height: 100%;
+    margin-top: 10px;
+    border: 0;
+    outline: none;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 2em;
+    float: right;
+}
+
+#settings button:focus,
+#settings button:hover {
+    border: 0;
+    outline: none;
+}
+
+#save {
+    background-color: rgb(186, 210, 110);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#save:focus,
+#save:hover {
+    background-color: rgb(144, 161, 89);
+}
+
+#cancel {
+    background-color: rgb(210, 113, 110);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#cancel:focus,
+#cancel:hover {
+    background-color: rgba(210, 113, 110, 0.733);
+}
+
+i:hover {
+    font-size: 1.8em;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.c0 {
+    background-color: #AD8A64;
+}
+
+.c1 {
+    background-color: #809BCE;
+}
+
+.c2 {
+    background-color: #95B8D1;
+}
+
+.c3 {
+    background-color: #B8E0D2;
+}
+
+.c4 {
+    background-color: #D6EADF;
+}
+
+.c5 {
+    background-color: #EAC4D5;
+}
+
+.c6 {
+    background-color: #E3D8F1;
+}
+
+.c7 {
+    background-color: #DABECA;
+}
+
+.c8 {
+    background-color: #BF8B85;
+}
+
+.c9 {
+    background-color: #5D5F71;
+}
+
+@media screen and (max-width: 705px) {
+    #settings {
+        height: 100vh;
+        width: 100vw;
+        transition: all 1s ease;
+    }
+    #welcomeWrapper {
+        height: 100vh;
+        width: 100vw;
+        transition: all 1s ease;
+    }
+}
